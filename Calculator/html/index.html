@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="../media/icons8-calculator-32 (1).png" type="image/x-icon">k
+    <link rel="stylesheet" href="../css/Calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/Calculator.js" defer></script>
+</head>
+<body>
+    <table>
+        <tr id="name_box">
+            <td colspan="4"><i class="fa fa-calculator" style="font-size:22px"></i> CALCULATOR</td>
+        </tr>
+        <tr>
+            <td id="output_box" colspan="4"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="√x" onclick="calculate('sqrt')"></td>
+            <td><input type="button" value="x²" onclick="calculate('square')"></td>
+            <td><input type="button" value="CE" onclick="clearOutput()"></td>
+            <td><input type="button" value="/" onclick="appendOperator('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="appendNumber(7)"></td>
+            <td><input type="button" value="8" onclick="appendNumber(8)"></td>
+            <td><input type="button" value="9" onclick="appendNumber(9)"></td>
+            <td><input type="button" value="*" onclick="appendOperator('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="appendNumber(4)"></td>
+            <td><input type="button" value="5" onclick="appendNumber(5)"></td>
+            <td><input type="button" value="6" onclick="appendNumber(6)"></td>
+            <td><input type="button" value="-" onclick="appendOperator('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="appendNumber(1)"></td>
+            <td><input type="button" value="2" onclick="appendNumber(2)"></td>
+            <td><input type="button" value="3" onclick="appendNumber(3)"></td>
+            <td><input type="button" value="+" onclick="appendOperator('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="appendNumber(0)"></td>
+            <td><input type="button" value="." onclick="appendDecimal()"></td>
+            <td colspan="2"><input type="button" value="=" onclick="calculateResult()"></td>
+        </tr>
+    </table>
+</body>
+</html>
